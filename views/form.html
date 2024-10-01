@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Booking Appointment Application</title>
+  </head>
+  <body style="margin: 0; height: 100vh;">
+    <div class="container">
+        <h1 class="p-2 text-center">BOOKING APPOINTMENT APP</h1>
+        <form class="col-12">
+            <div class="form-group">
+                <label for="userName" class="col-6">Username :</label>
+                <input type="text" class="form-control" name="userName" id="userName" required/>
+            </div>
+            <div class="form-group">
+                <label for="userNum" class="col-6">Phone Number :</label>
+                <input type="number" class="form-control" name="userNum" id="userNum" required/>
+            </div>
+            <div class="form-group">
+                <label for="userMail" class="col-6">Email :</label>
+                <input type="email" class="form-control" name="userMail" id="userMail" required/>
+            </div>
+            <button type="submit" class="btn btn-primary col-12">Add User</button>
+        </form> 
+        <ul class="list-group mt-4"></ul>
+    </div>
+  </body>
+  <script src="form.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+</html>
